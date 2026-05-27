@@ -1,0 +1,18 @@
+CREATE DATABASE control_empleados;
+
+USE control_empleados;
+
+CREATE TABLE empleados (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nombre VARCHAR(100),
+    hora_entrada TIME,
+    hora_salida TIME
+);
+
+INSERT INTO empleados(nombre, hora_entrada, hora_salida)
+VALUES
+('Maynor', '08:00:00', '17:00:00'),
+('Carlos', '07:30:00', '16:30:00'),
+('Andrea', '09:00:00', '18:00:00');
+
+SELECT * FROM empleados;
